@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Menu com Submenu</title>
+</head>
+<body>
+
+    <header>
+
+        <section class="top-header">
+
+            <div class="interface">
+                <div>
+                    <a href="#">
+                        <img src="image/logo.png" alt="logotipo">
+                    </a>
+                </div>
+
+            <div class="btn-social">
+                <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+                <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+            </div>
+
+        </section>
+
+        <section class="bottom-header">
+
+            <div class="interface">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="drop-hover"><a href="#">Cadastro <i class="bi bi-caret-down-fill"></i> </a>
+                            <div class="drop">
+                                <a href="empresa.html">Empresa</a>
+                                <a href="produto.html">Produto</a>
+                                <a href="cliente.html">Cliente</a>
+                                <a href="kit.html">Kits</a>
+                            </div>
+                       </li>
+                        <li><a href="pedido.html">Pedido</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+        </section>
+
+    </header>
+
+    <h2>Realizar pedido</h2>
+    
+    <form action="">
+
+        <section id="pedido">
+            <div id="cad_pedido">
+
+                <label for="">Cliente:</label>
+                <select name="select" id="cliente">
+                    <option value="1">Cliente 1</option>
+                    <option value="2">Cliente 2</option>
+                </select>
+                
+                <br>
+    
+                <label for="">Kit:</label>
+                <select name="select" id="kit">
+                    <option value="1">Kit 1</option>
+                    <option value="2">Kit 2</option>
+                </select>
+    
+                <br>
+    
+                <label for="">Precisa de entrega:</label>
+                <select name="select" id="entrega">
+                    <option value="1">Sim</option>
+                    <option value="2">Não</option>
+                </select>
+    
+                <br>
+                
+                <label for="">Endereço:</label>
+                <input type="text" name="endereco" value="" />
+    
+                <br>
+    
+                <label for="">Complemento:</label>
+                <input type="text" name="complemento" value="" />
+    
+                <br>
+    
+                <label for="">CEP:</label>
+                <input type="text" name="cep" value="" />
+    
+                <br>
+    
+                <label for="">Pagamento:</label>
+                <input type="number" format="currency" precision="2" name="valor" value="">
+    
+                <br>
+    
+                <label for="">Data do evento:</label>
+                <input type="date" name="data_evento" value="">
+
+                <br>
+    
+                <label for="">Data da entrega:</label>
+                <input type="date" name="data_entrega" value="">
+
+                <br>
+    
+                <label for="">Observação:</label>
+                <input type="textearea" name="observacao" value="" />
+    
+            </div>
+        </section>
+    </form>
+
+</body>
+</html>
