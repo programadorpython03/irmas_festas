@@ -184,3 +184,117 @@ h2 {
     background-color: #575d63;
 }
 
+/* Responsividade para diferentes dispositivos */
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .content {
+        margin-left: 240px; /* Ajusta o conteúdo para telas menores */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Para tablets em modo paisagem ou telas menores */
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 220px; /* Ajusta o conteúdo para telas menores */
+    }
+
+    .top-header > .interface {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-header .logotipo img {
+        max-width: 180px;
+    }
+
+    .bottom-header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bottom-header nav ul li a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Para dispositivos móveis (smartphones) */
+    .sidebar {
+        width: 100%;
+        position: absolute;
+        height: auto;
+        padding-top: 10px;
+        display: none; /* Esconde o menu lateral em telas pequenas */
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 60px 10px 20px 10px; /* Ajusta o padding do conteúdo */
+    }
+
+    .top-header > .interface {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-header .logotipo img {
+        max-width: 180px;
+    }
+
+    .bottom-header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bottom-header nav ul li a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Mostra o menu lateral em telas pequenas */
+    .sidebar.active {
+        display: block;
+    }
+
+    /* Ajusta os cartões para telas pequenas */
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Para telas muito pequenas (smartphones em modo retrato) */
+    .top-header {
+        padding: 10px 2%;
+    }
+
+    .top-header .logotipo img {
+        max-width: 150px;
+    }
+
+    .btn-custon {
+        margin-top: 20px;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer .btn-social button {
+        width: 35px;
+        height: 35px;
+    }
+}
