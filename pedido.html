@@ -3,152 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão e Controle de Festas</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"crossorigin="anonymous">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
-    <title>Sistema de Gestão e Controle de Festas</title>
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body style="font-family: 'Oswald', sans-serif;">
 
-    <header>
-
-        <section class="top-header">
-
-            <div class="interface">
-                <div>
+    <!-- Sidebar / Menu Lateral -->
+    <div class="sidebar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="row">
+                <div class="col-12 text-center">
                     <a href="#">
-                        <img src="image/logo.png" alt="logotipo">
+                        <img src="image/logo.png" alt="Logotipo da Empresa" class="img-custom">
                     </a>
                 </div>
-
-            <div class="btn-social">
-                <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                <a href="#"><button><i class="bi bi-facebook"></i></button></a>
-                <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
             </div>
 
-        </section>
-
-        <section class="bottom-header">
-
-            <div class="interface">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="drop-hover"><a href="#">Cadastro <i class="bi bi-caret-down-fill"></i> </a>
-                            <div class="drop">
-                                <a href="empresa.html">Empresa</a>
-                                <a href="produto.html">Produto</a>
-                                <a href="cliente.html">Cliente</a>
-                                <a href="kit.html">Kits</a>
-                            </div>
-                       </li>
-                        <li><a href="pedido.html">Pedido</a></li>
-                    </ul>
-                </nav>
-            </div>
-        
-        </section>
-
-    </header>
-
-    <h2>Realizar pedido</h2>
-
-    <div class="container-fluid">
-        
-        <form class="row g-6">
-
-            <div class="col-md-3">
-                <label for="validationDefault04" class="form-label">Cliente</label>
-                <select class="form-select" id="validationDefault04" required>
-                    <option selected disabled value="">Escolha...</option>
-                    <option value="valor2">Cliente 1</option>                    
-                    <option value="valor1">Cliente 2</option>
-                    <option value="valor3">Cliente 3</option>
-                </select>
-            </div>
-
-            <div class="col-md-3">
-                <label for="validationDefault04" class="form-label">Kit</label>
-                <select class="form-select" id="validationDefault04" required>
-                    <option selected disabled value="">Escolha...</option>
-                    <option value="valor2">Kit 1</option>                    
-                    <option value="valor1">Kit 2</option>
-                    <option value="valor3">Kit 3</option>
-                </select>
-            </div>
-
-            <div class="col-md-3">
-                <label for="validationDefault04" class="form-label">Entrega</label>
-                <select class="form-select" id="validationDefault04" required>
-                    <option selected disabled value="">Escolha...</option>
-                    <option value="valor2">Sim</option>                    
-                    <option value="valor1">Não</option>
-                </select>
-            </div>
-
-            <div class="col-md-3">
-                <label for="validationDefault05" class="form-label">Valor</label>
-                <input type="number" format="currency" precision="2"  class="form-control" id="validationDefault05" required>
-            </div>
-
-            <div class="row form-group">
-                <div class="col-sm-6">
-                    <label for="date" class="col-sm-1 col-form-label">Data do evento</label>
-                    <input id="startDate" class="form-control" type="date" />
-                </div>
-
-                <div class="col-sm-6">
-                    <label for="date" class="col-sm-1 col-form-label">Data de entrega</label>
-                    <input id="startDate" class="form-control" type="date" />
+            <!-- Menu de Navegação -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <a href="pagina_inicial.html">Home</a>
+                    <div class="drop-hover">
+                        <a href="#">Cadastro <i class="bi bi-caret-down-fill"></i></a>
+                        <div class="drop">
+                            <a href="empresa.html">Empresa</a>
+                            <a href="produto.html">Produto</a>
+                            <a href="cliente.html">Cliente</a>
+                            <a href="kit.html">Kits</a>
+                        </div>
+                    </div>
+                    <a href="pedido.html">Pedido</a>
                 </div>
             </div>
-
-            <div class="col-md-3">
-                <label for="validationDefault05" class="form-label">Endereço</label>
-                <input type="text" class="form-control" id="validationDefault05" required>
-
-                <label for="validationDefault05" class="form-label">Complemento</label>
-                <input type="text" class="form-control" id="validationDefault05" required>
-            </div>
-
-            <div class="col-md-3">
-                <label for="validationDefault05" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="validationDefault05" required>
-            </div>
-            
-            <div class="col-md-3">
-                <label for="validationDefault03" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="validationDefault03" >
-            </div>
-            
-            <div class="col-md-3">
-                <label for="validationDefault04" class="form-label">Estado</label>
-                <select class="form-select" id="validationDefault04" required>
-                    <option selected disabled value="">Escolha...</option>
-                    <option>...</option>
-                </select>
-            </div>
-            
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Oservação</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <div class="col-15">
-                <button class="btn btn-primary" type="submit">Cadastrar</button>
-            </div>
-
-        </form>
+        </div>
     </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="content">
+        <div class="container-fluid">
+            <h2>Pedidos</h2>
+
+            <!-- Tabela de Pedidos -->
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                </div>
+                            </th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Kit</th>
+                            <th scope="col">Data do Evento</th>
+                            <th scope="col">Valor</th>
+                            <th scope="col">#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                </div>
+                            </th>
+                            <td>Cliente 1</td>
+                            <td>Kit 1</td>
+                            <td>2025-02-15</td>
+                            <td>R$ 500,00</td>
+                            <td>
+                                <span class="text-success">
+                                    <i class="bi bi-trash3-fill" style="font-size: 1.5rem;"></i>
+                                </span>
+                                <span class="text-success">
+                                    <a href="editar_pedido.html"> <i class="bi bi-pencil-square" style="font-size: 1.5rem;"></i> </a>
+                                </span>
+                                <span class="text-success">
+                                    <a href="visualizar_pedido.html"> <i class="bi bi-eye-fill" style="font-size: 1.5rem;"></i> </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                </div>
+                            </th>
+                            <td>Cliente 2</td>
+                            <td>Kit 2</td>
+                            <td>2025-03-05</td>
+                            <td>R$ 750,00</td>
+                            <td>
+                                <span class="text-success">
+                                    <i class="bi bi-trash3-fill" style="font-size: 1.5rem;"></i>
+                                </span>
+                                <span class="text-success">
+                                    <a href="editar_pedido.html"> <i class="bi bi-pencil-square" style="font-size: 1.5rem;"></i> </a>
+                                </span>
+                                <span class="text-success">
+                                    <a href="visualizar_pedido.html"> <i class="bi bi-eye-fill" style="font-size: 1.5rem;"></i> </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                </div>
+                            </th>
+                            <td>Cliente 3</td>
+                            <td>Kit 3</td>
+                            <td>2025-04-20</td>
+                            <td>R$ 900,00</td>
+                            <td>
+                                <span class="text-success">
+                                    <i class="bi bi-trash3-fill" style="font-size: 1.5rem;"></i>
+                                </span>
+                                <span class="text-success">
+                                    <a href="editar_pedido.html"> <i class="bi bi-pencil-square" style="font-size: 1.5rem;"></i> </a>
+                                </span>
+                                <span class="text-success">
+                                    <a href="visualizar_pedido.html"> <i class="bi bi-eye-fill" style="font-size: 1.5rem;"></i> </a>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="col-15">
+                    <a href="cadastrar_pedido.html"><button class="btn btn-primary" type="submit">Cadastrar</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer com Redes Sociais -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="social-icons">
+                <a href="#" class="btn-social"><button><i class="bi bi-instagram"></i></button></a>
+                <a href="#" class="btn-social"><button><i class="bi bi-facebook"></i></button></a>
+                <a href="#" class="btn-social"><button><i class="bi bi-whatsapp"></i></button></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
