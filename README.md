@@ -29,13 +29,13 @@ Este sistema web foi desenvolvido para empresas que trabalham com aluguel de kit
 **Estrutura do Projeto**
 
 └── image
-    └── logo.png
+  └── logo.png
 
 └── css
-    └── styles.css
+  └── styles.css
 
 └── doc
-    └── documentacao-sistema.odt
+  └── documentacao-sistema.odt
 
 **Como Rodar o Projeto**
 
