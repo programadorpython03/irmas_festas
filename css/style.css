@@ -118,6 +118,10 @@ h2 {
 }
 
 /* DASHBOARD */
+.content_style {
+    padding: 100px 1px;
+}
+
 .sidebar {
     height: 100vh;
     position: fixed;
