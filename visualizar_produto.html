@@ -64,27 +64,27 @@
                     <form class="row g-3">
                         <div class="col-md-4">
                             <label for="produto" class="form-label">Produto</label>
-                            <input type="text" class="form-control" id="produto" value="Mark" readonly>
+                            <input type="text" class="form-control" id="produto" value="Mark" disabled>
                         </div>
 
                         <div class="col-md-12">
                             <label for="descricao" class="form-label">Descrição</label>
-                            <textarea class="form-control" id="descricao" rows="3" readonly>Descrição do Produto</textarea>
+                            <textarea class="form-control" id="descricao" rows="3" disabled>Descrição do Produto</textarea>
                         </div>
 
                         <div class="col-md-4">
                             <label for="valor" class="form-label">Valor</label>
-                            <input type="text" class="form-control" id="valor" value="R$ 3,00" readonly>
+                            <input type="text" class="form-control" id="valor" value="R$ 3,00" disabled>
                         </div>
 
                         <div class="col-md-4">
                             <label for="quantidade" class="form-label">Quantidade</label>
-                            <input type="text" class="form-control" id="quantidade" value="15" readonly>
+                            <input type="text" class="form-control" id="quantidade" value="15" disabled>
                         </div>
 
                         <div class="col-md-4">
                             <label for="status" class="form-label">Status</label>
-                            <input type="text" class="form-control" id="status" value="Disponível" readonly>
+                            <input type="text" class="form-control" id="status" value="Disponível" disabled>
                         </div>
 
                         <div class="col-md-12 mt-4">
@@ -92,9 +92,11 @@
                             <img src="image/teste.png" class="rounded img-custom" alt="Imagem do Produto">
                         </div>
 
-                        <div class="col-12 text-center mt-4">
-                            <a href="produto.html" class="btn btn-primary px-5 py-2">Voltar</a>
-                        </div>
+                <!-- Ações -->
+                <div class="mt-4">
+                    <a href="editar_produto.html" class="btn btn-warning"><i class="bi bi-pencil-square"></i> Editar produto</a>
+                    <a href="produto.html" class="btn btn-primary"><i class="bi bi-arrow-left-circle"></i> Voltar para os Produto</a>
+                </div>
                     </form>
                 </div>
             </div>

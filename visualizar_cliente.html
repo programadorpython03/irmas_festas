@@ -64,60 +64,62 @@
                     <form class="row g-3">
                         <div class="col-md-4">
                             <label for="primeiroNome" class="form-label">Primeiro nome</label>
-                            <input type="text" class="form-control" id="primeiroNome" value="Mark" readonly>
+                            <input type="text" class="form-control" id="primeiroNome" value="Mark" disabled>
                         </div>
 
                         <div class="col-md-4">
                             <label for="ultimoNome" class="form-label">Último nome</label>
-                            <input type="text" class="form-control" id="ultimoNome" value="Otto" readonly>
+                            <input type="text" class="form-control" id="ultimoNome" value="Otto" disabled>
                         </div>
 
                         <div class="col-md-2">
                             <label for="telefone" class="form-label">Telefone de Contato</label>
-                            <input type="text" class="form-control" id="telefone" value="(00) 00000-0000" readonly>
+                            <input type="text" class="form-control" id="telefone" value="(00) 00000-0000" disabled>
                         </div>
 
                         <div class="col-md-4">
                             <label for="email" class="form-label">E-mail</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                                <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend2" value="teste@teste.com.br" readonly>
+                                <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend2" value="teste@teste.com.br" disabled>
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <label for="cpf" class="form-label">CPF</label>
-                            <input type="text" class="form-control" id="cpf" value="000.000.000-00" readonly>
+                            <input type="text" class="form-control" id="cpf" value="000.000.000-00" disabled>
                         </div>
 
                         <div class="col-md-3">
                             <label for="endereco" class="form-label">Endereço</label>
-                            <input type="text" class="form-control" id="endereco" value="Av. Teste 759" readonly>
+                            <input type="text" class="form-control" id="endereco" value="Av. Teste 759" disabled>
                         </div>
 
                         <div class="col-md-3">
                             <label for="complemento" class="form-label">Complemento</label>
-                            <input type="text" class="form-control" id="complemento" value="" readonly>
+                            <input type="text" class="form-control" id="complemento" value="" disabled>
                         </div>
 
                         <div class="col-md-3">
                             <label for="cep" class="form-label">CEP</label>
-                            <input type="text" class="form-control" id="cep" value="000000-000" readonly>
+                            <input type="text" class="form-control" id="cep" value="000000-000" disabled>
                         </div>
 
                         <div class="col-md-3">
                             <label for="cidade" class="form-label">Cidade</label>
-                            <input type="text" class="form-control" id="cidade" value="Teste" readonly>
+                            <input type="text" class="form-control" id="cidade" value="Teste" disabled>
                         </div>
 
                         <div class="col-md-3">
                             <label for="estado" class="form-label">Estado</label>
-                            <input type="text" class="form-control" id="estado" value="Brasil" readonly>
+                            <input type="text" class="form-control" id="estado" value="Brasil" disabled>
                         </div>
 
-                        <div class="col-12 text-center mt-4">
-                            <a href="cliente.html" class="btn btn-primary px-5 py-2">Voltar</a>
-                        </div>
+                <!-- Ações -->
+                <div class="mt-4">
+                    <a href="editar_cliente.html" class="btn btn-warning"><i class="bi bi-pencil-square"></i> Editar cliente</a>
+                    <a href="cliente.html" class="btn btn-primary"><i class="bi bi-arrow-left-circle"></i> Voltar para os clientes</a>
+                </div>
                     </form>
                 </div>
             </div>

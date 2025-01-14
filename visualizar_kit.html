@@ -64,27 +64,27 @@
                     <form class="row g-3">
                         <div class="col-md-4">
                             <label for="kitName" class="form-label">Kit</label>
-                            <input type="text" class="form-control" id="kitName" value="Kit Festa" readonly>
+                            <input type="text" class="form-control" id="kitName" value="Kit Festa" disabled>
                         </div>
 
                         <div class="col-md-4">
                             <label for="kitDescription" class="form-label">Descrição</label>
-                            <input type="text" class="form-control" id="kitDescription" value="Kit completo para festas" readonly>
+                            <input type="text" class="form-control" id="kitDescription" value="Kit completo para festas" disabled>
                         </div>
 
                         <div class="col-md-2">
                             <label for="kitPrice" class="form-label">Valor</label>
-                            <input type="text" class="form-control" id="kitPrice" value="R$ 120,00" readonly>
+                            <input type="text" class="form-control" id="kitPrice" value="R$ 120,00" disabled>
                         </div>
 
                         <div class="col-md-3">
                             <label for="kitQuantity" class="form-label">Quantidade de peças</label>
-                            <input type="text" class="form-control" id="kitQuantity" value="10" readonly>
+                            <input type="text" class="form-control" id="kitQuantity" value="10" disabled>
                         </div>
 
                         <div class="col-md-3">
                             <label for="kitStatus" class="form-label">Status</label>
-                            <input type="text" class="form-control" id="kitStatus" value="Disponível" readonly>
+                            <input type="text" class="form-control" id="kitStatus" value="Disponível" disabled>
                         </div>
 
                         <label for="kitProducts" class="form-label">Produtos no Kit</label>
@@ -101,9 +101,11 @@
                             <img src="image/teste.png" class="rounded img-custom" alt="Imagem do Kit">
                         </div>
 
-                        <div class="col-12 text-center mt-4">
-                            <a href="kit.html" class="btn btn-primary px-5 py-2">Voltar</a>
-                        </div>
+                <!-- Ações -->
+                <div class="mt-4">
+                    <a href="editar_kit.html" class="btn btn-warning"><i class="bi bi-pencil-square"></i> Editar kit</a>
+                    <a href="kit.html" class="btn btn-primary"><i class="bi bi-arrow-left-circle"></i> Voltar para os kits</a>
+                </div>
                     </form>
                 </div>
             </div>

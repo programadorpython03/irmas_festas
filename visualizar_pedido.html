@@ -58,36 +58,147 @@
         <div class="container-fluid">
             <h2>Visualizar Pedido</h2>
 
-            <!-- Detalhes do Pedido -->
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Detalhes do Pedido</h5>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p><strong>Cliente:</strong> Cliente 1</p>
-                            <p><strong>Kit:</strong> Kit 1</p>
-                            <p><strong>Data do Evento:</strong> 2025-02-15</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p><strong>Valor:</strong> R$ 500,00</p>
-                            <p><strong>Data de Entrega:</strong> 2025-02-14</p>
-                            <p><strong>Endereço:</strong> Rua Exemplo, 123, Bairro ABC</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p><strong>Observações:</strong> Pedido urgente, precisa de entrega no dia anterior ao evento.</p>
-                        </div>
-                    </div>
-
-                    <div class="mt-4">
-                        <a href="editar_pedido.html" class="btn btn-warning"><i class="bi bi-pencil-square"></i> Editar Pedido</a>
-                        <a href="pedido.html" class="btn btn-primary"><i class="bi bi-arrow-left-circle"></i> Voltar para os Pedidos</a>
-                    </div>
+            <!-- Formulário de Visualização de Pedido -->
+            <form class="row g-4">
+                <!-- Cliente -->
+                <div class="col-md-3">
+                    <label for="cliente" class="form-label">Cliente</label>
+                    <input type="text" class="form-control" id="cliente" value="Cliente 1" disabled>
                 </div>
-            </div>
+
+                <!-- Kit -->
+                <div class="col-md-3">
+                    <label for="kit" class="form-label">Kit</label>
+                    <input type="text" class="form-control" id="kit" value="Kit 1" disabled>
+                </div>
+
+                <!-- Entrega -->
+                <div class="col-md-3">
+                    <label for="entrega" class="form-label">Entrega</label>
+                    <input type="text" class="form-control" id="entrega" value="Sim" disabled>
+                </div>
+
+                <!-- Valor -->
+                <div class="col-md-3">
+                    <label for="valor" class="form-label">Valor</label>
+                    <input type="text" class="form-control" id="valor" value="R$ 500,00" disabled>
+                </div>
+
+                <!-- Nome do Aniversariante -->
+                <div class="col-md-3">
+                    <label for="aniversariante" class="form-label">Nome do (a) Aniversariante</label>
+                    <input type="text" class="form-control" id="aniversariante" value="João da Silva" disabled>
+                </div>
+
+                <!-- Idade do Aniversariante -->
+                <div class="col-md-3">
+                    <label for="idade" class="form-label">Idade que irá fazer</label>
+                    <input type="number" class="form-control" id="idade" value="30" disabled>
+                </div>
+
+                <!-- Endereço da Festa -->
+                <div class="col-md-3">
+                    <label for="endereco_festa" class="form-label">Endereço da festa (Caso não seja em casa)</label>
+                    <input type="text" class="form-control" id="endereco_festa" value="Rua ABC, 456, Bairro XYZ" disabled>
+                </div>
+
+                <!-- Foto Comprovante de Endereço -->
+                <div class="col-md-3">
+                    <label for="foto_comprovante_endereco" class="form-label">Foto Comprovante de Endereço</label>
+                    <input type="text" class="form-control" id="foto_comprovante_endereco" value="Comprovante_123.jpg" disabled>
+                </div>
+
+                <!-- Foto da Identidade -->
+                <div class="col-md-3">
+                    <label for="foto_identidade" class="form-label">Foto da Identidade</label>
+                    <input type="text" class="form-control" id="foto_identidade" value="Identidade_123.jpg" disabled>
+                </div>
+
+                <!-- Local de Retirada do Kit -->
+                <div class="col-md-3">
+                    <label for="local_retirada" class="form-label">Local de Retirada do Kit</label>
+                    <input type="text" class="form-control" id="local_retirada" value="Bairro: Dom Pedro I / São José da Lapa" disabled>
+                </div>
+
+                <!-- Data do Evento -->
+                <div class="col-md-3">
+                    <label for="data_evento" class="form-label">Data do Evento</label>
+                    <input type="date" class="form-control" id="data_evento" value="2025-02-15" disabled>
+                </div>
+
+                <!-- Data de Entrega -->
+                <div class="col-md-3">
+                    <label for="data_entrega" class="form-label">Data de Entrega</label>
+                    <input type="date" class="form-control" id="data_entrega" value="2025-02-14" disabled>
+                </div>
+
+                <!-- Endereço -->
+                <div class="col-md-3">
+                    <label for="endereco" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" value="Rua Exemplo, 123, Bairro ABC" disabled>
+                </div>
+
+                <!-- Complemento -->
+                <div class="col-md-3">
+                    <label for="complemento" class="form-label">Complemento</label>
+                    <input type="text" class="form-control" id="complemento" value="Apartamento 501" disabled>
+                </div>
+
+                <!-- CEP -->
+                <div class="col-md-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" value="12345-678" disabled>
+                </div>
+
+                <!-- Bairro -->
+                <div class="col-md-3">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" value="Centro" disabled>
+                </div>
+
+                <!-- Cidade -->
+                <div class="col-md-3">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" value="Belo Horizonte" disabled>
+                </div>
+
+                <!-- Estado -->
+                <div class="col-md-3">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado" value="MG" disabled>
+                </div>
+
+                <!-- Caixinhas Personalizadas -->
+                <div class="col-md-3">
+                    <label for="caixinhas_personalizadas" class="form-label">Deseja caixinhas personalizadas?</label>
+                    <input type="text" class="form-control" id="caixinhas_personalizadas" value="Sim" disabled>
+                </div>
+
+                <!-- Quantidade de caixinhas -->
+                <div class="col-md-3">
+                    <label for="quantidade_caixinhas" class="form-label">Quantidade de caixinhas</label>
+                    <input type="number" class="form-control" id="quantidade_caixinhas" value="50" disabled>
+                </div>
+
+                <!-- Valor das caixinhas -->
+                <div class="col-md-3">
+                    <label for="valor_caixinhas" class="form-label">Valor das caixinhas</label>
+                    <input type="number" class="form-control" id="valor_caixinhas" value
+                    <input type="number" class="form-control" id="valor_caixinhas" value="R$ 15,00" disabled>
+                </div>
+
+                <!-- Observações -->
+                <div class="col-md-12">
+                    <label for="observacao" class="form-label">Observações</label>
+                    <textarea class="form-control" id="observacao" rows="3" disabled>Pedido urgente, precisa de entrega no dia anterior ao evento.</textarea>
+                </div>
+
+                <!-- Ações -->
+                <div class="mt-4">
+                    <a href="editar_pedido.html" class="btn btn-warning"><i class="bi bi-pencil-square"></i> Editar Pedido</a>
+                    <a href="pedido.html" class="btn btn-primary"><i class="bi bi-arrow-left-circle"></i> Voltar para os Pedidos</a>
+                </div>
+            </form>
         </div>
     </div>
 

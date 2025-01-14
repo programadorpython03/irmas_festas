@@ -144,7 +144,7 @@ h2 {
 
 .content {
     margin-left: 270px; /* Espaçamento suficiente para que o conteúdo não sobreponha o menu */
-    padding: 100px 20px;
+    padding: 10px 20px;
     z-index: 1; /* Garante que o conteúdo fique abaixo do menu */
 }
 
