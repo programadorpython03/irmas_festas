@@ -105,22 +105,22 @@
                     <input type="number" class="form-control" id="idade" required>
                 </div>
 
-                <!-- Endereço da Festa -->
-                <div class="col-md-3">
-                    <label for="endereco_festa" class="form-label">Endereço da festa (Caso não seja em casa)</label>
-                    <input type="text" class="form-control" id="endereco_festa">
-                </div>
+                <!-- Data do Evento, Data de Entrega/Retirada e Data da Devolução -->
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label for="data_evento" class="col-sm-3 col-form-label">Data do Evento</label>
+                        <input id="data_evento" class="form-control" type="date" required />
+                    </div>
 
-                <!-- Foto Comprovante de Endereço -->
-                <div class="col-md-3">
-                    <label for="foto_comprovante_endereco" class="form-label">Foto Comprovante de Endereço</label>
-                    <input type="file" class="form-control" id="foto_comprovante_endereco">
-                </div>
+                    <div class="col-sm-3">
+                        <label for="data_entrega" class="col-sm-4 col-form-label">Data de Entrega/Retirada</label>
+                        <input id="data_entrega" class="form-control" type="date" required />
+                    </div>
 
-                <!-- Foto da Identidade -->
-                <div class="col-md-3">
-                    <label for="foto_identidade" class="form-label">Foto da Identidade</label>
-                    <input type="file" class="form-control" id="foto_identidade">
+                    <div class="col-sm-3">
+                        <label for="data_entrega" class="col-sm-3 col-form-label">Data da Devolução</label>
+                        <input id="data_entrega" class="form-control" type="date" required />
+                    </div>
                 </div>
 
                 <!-- Local de Retirada do Kit -->
@@ -140,24 +140,20 @@
                     </div>
                 </div>
 
-                <!-- Data do Evento e Data de Entrega -->
-                <div class="row form-group">
-                    <div class="col-sm-6">
-                        <label for="data_evento" class="col-sm-1 col-form-label">Data do Evento</label>
-                        <input id="data_evento" class="form-control" type="date" required />
-                    </div>
-
-                    <div class="col-sm-6">
-                        <label for="data_entrega" class="col-sm-1 col-form-label">Data de Entrega</label>
-                        <input id="data_entrega" class="form-control" type="date" required />
-                    </div>
+                <!-- Endereço e Complemento -->
+                <div class="mb-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="caixinhas_personalizadas" checked>
+                        <label class="form-check-label" for="caixinhas_personalizadas">Endereço de entrega diferente do cadastrado?</label>
+                    </div>                      
                 </div>
 
-                <!-- Endereço e Complemento -->
                 <div class="col-md-3">
                     <label for="endereco" class="form-label">Endereço</label>
                     <input type="text" class="form-control" id="endereco" required>
+                </div>
 
+                <div class="col-md-3">
                     <label for="complemento" class="form-label">Complemento</label>
                     <input type="text" class="form-control" id="complemento">
                 </div>
